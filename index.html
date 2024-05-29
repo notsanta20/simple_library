@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <title>Odin's Archive</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">Odin's Archive</h1>
+    <button class="add-book">Add Book</button>
+    <div  class="cards"></div>
+    <dialog class="modal">
+      <p>Add New Book</p>
+      <form action="">
+        <div>
+          <label for="title">Title</label>
+          <input type="text" id="title" required>
+        </div>
+        <div>
+          <label for="author">Author</label>
+          <input type="text" id="author" required>
+        </div>
+        <div>
+          <label for="pages">Number of Pages</label>
+          <input type="number" id="pages" required>
+        </div>
+        <div>
+          <label for="checkbox">Have Read ?</label>
+          <input type="checkbox" id="checkbox" required>
+        </div>
+        <input type="submit" id="submit">
+      </form>
+    </dialog>
+    <footer>
+      <p>© 2024 Santa</p>
+      <a href="" class="link">Source Code</a>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+

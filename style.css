@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+  }
+  
+  body{
+    background-color: rgb(221, 221, 221);
+  }
+  
+  .container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 70px 50px 1fr 70px;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .heading{
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  /* BOOK CARDS */
+  
+  .cards{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+    align-self: stretch;
+    justify-self: stretch;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    grid-auto-rows: max-content;
+    justify-content: center;
+    overflow: auto;
+  }
+  
+  .card{
+    font-size: 2rem;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(221, 221, 221);
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .card-buttons{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .card button{
+    font-size: 1.2rem;
+    width: 100px;
+    padding: 10px;
+  }
+  
+  .card-green{
+    background-color: rgb(79, 216, 79);
+  }
+  
+  .card-red{
+    background-color: rgb(216, 79, 79);
+  }
+  
+  /* MODAL DIALOGUE BOX */
+  
+  .add-book:hover{
+    background-color: rgb(182, 182, 182);
+    transition: 300ms;
+  }
+  
+  dialog{
+    border: 0px;
+    border-radius: 10px;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .modal p{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  form div{
+    width: 100%;
+    display: flex;
+  
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  label{
+    font-size: 1.5rem;
+    font-weight: 600;
+  
+  }
+  
+  input{
+    font-size: 1.5rem;
+    border: 0px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 8px;
+    padding: 10px;
+    outline: none;
+  }
+  
+  #checkbox{
+    transform: scale(2);
+    margin-right: auto;
+    margin-left: 85px;
+  }
+  
+  button{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px 30px;
+    border: 0px;
+    border-radius: 10px;
+  }
+  
+  /* Footer */
+  
+  footer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 25%;
+    font-weight: 600;
+  }
+  
+  footer a{
+    text-decoration: none;
+    color: black;
+  }
