@@ -80,4 +80,8 @@ submitBtn.addEventListener(`click`,()=>{
   event.preventDefault();
   addBook();
   modal.close();
+  title.value = ``;
+  author.value = ``;
+  pages.value = ``;
+  checkBox.checked = ``;
 });
