@@ -3,7 +3,7 @@
   <p align="center">
     Simple library for tracking the books. 
     <br />
-    <a href="https://notsanta20.github.io/dashboard/" target="_blank">Live Demo</a>
+    <a href="https://notsanta20.github.io/simple_library/" target="_blank">Live Demo</a>
   </p>
 </div>
 <br>
