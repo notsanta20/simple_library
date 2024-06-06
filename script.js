@@ -11,18 +11,18 @@ const submitBtn = document.querySelector(`#submit`);
 const readBtn = document.querySelector(`.read-btn`);
 let myLibrary = [];
 
-// book object
+// book Class
 
-function Book(title, author, pages, read){
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
-};
+class Book{
+  constructor(title, author, pages, read){
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+  }
 
-// Toggle Read/Unread Status
-
-Book.prototype.status = function(){this.read ? this.read = false : this.read = true};
+  status () {this.read ? this.read = false : this.read = true};
+}
 
 // Function to add new books
 
